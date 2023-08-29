@@ -770,11 +770,26 @@ def confusion_matrix_viz(cm):
 </div>
 
 ## :sparkles: 8. Project structure
-'**notebook.ipynb**', the IPython Notebook for the original experiment.;       
-'**showcase.ipynb**', an IPython Notebook used to briefly illustrate the outcomes;      
-'**CusDatasets.py**', contains two customized dataset classes;      
-'**models.py**', includes the reproduced variants from research papers;      
-'**trainer.py**', comprises the training procedure and related items;
-'**fine_tuner**', implements the fine-tuning method;      
-'**evaluator.py**', provides evaluation methods for single and multiple models;      
-'**predictor.py**', offers prediction and visualization capabilities.      
+```
+├── datasets          
+|   └── data_loader      
+├── model_hub      
+│   ├── pre_trained/      
+│   │   ├── alexnet.pth      
+│   │   ├── ... # Some other pre-trained model parameters      
+│   │
+│   └── fine_tuned/      
+│       ├── alexnet_tuned.pth      
+│       └── ... # Some other fine-tuned model parameters      
+│
+├── models      
+│   └── models.py      
+│
+├── outputs/      
+│   └── # Some visualizations      
+│
+└── tools      
+    ├── train.py      
+    ├── eval.py      
+    ├── fine_tune.py      
+    └── predict.py```

@@ -1,0 +1,9 @@
+Description of the dataset:
+
+1. emnist_train.pkl: This file contains the training data and labels for the EMNIST dataset. It stores a dictionary with two keys, 'data' and 'labels':
+	- 'data': A numpy array with the shape (100000, 1, 28, 28), representing 100,000 grayscale images of size 28x28 pixels. 
+	- 'labels': A numpy array with the shape (100000,), containing the corresponding class labels for the training images. The labels are integers in the range of [0, 61], representing the 62 classes in the EMNIST by_class dataset.
+
+2. emnist_test.pkl: This file contains the test data and labels for the EMNIST dataset. It stores a dictionary with two keys, 'data' and 'labels':
+	- 'data': A numpy array with the shape (20000, 1, 28, 28), representing 20,000 grayscale images of size 28x28 pixels.
+	- 'labels': A numpy array with the shape (20000,), containing the corresponding class labels for the test images. The labels are integers in the range of [0, 61], representing the 62 classes in the EMNIST by_class dataset.

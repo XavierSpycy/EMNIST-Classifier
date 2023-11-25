@@ -1,1 +1,7 @@
-/.DS_Store
+.DS_Store
+/.ipynb_checkpoints
+charclf/__pycache__/*
+charclf/tools/__pycache__/*
+notebook-1.ipynb
+notebook-2.ipynb
+v2.ipynb

@@ -8,6 +8,19 @@
   (Source: towardsdatascience.com)
 </div>
 
+## :rocket: Quick Start:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/XavierSpycy/EMNIST-Classifier/blob/main/notebook.ipynb)
+
+## Content
+- [1. Introduction](#sparkles-1-introduction)
+- [2.Augmentation techniques ](#sparkles-2-augmentation-techniques)
+- [3. CNNs](#sparkles-3-convolutional-neural-network-architectures)
+- [4. Random Search](#sparkles-4-hyperparameter-selection-random-search)
+- [5. Training Procedure](#sparkles-5-visualization-of-the-training-procedure)
+- [6. Pre-training & Fine-tuning](#sparkles-6-pre-training--fine-tuning)
+- [7. Evaluation & Extension](#sparkles-7-evaluation-and-extension)
+- [8. Project Structure](#sparkles-8-project-structure)
+
 
 ## :sparkles: 1. Introduction
 ### 1.1 What is the EMNIST Dataset?
@@ -771,26 +784,29 @@ def confusion_matrix_viz(cm):
 
 ## :sparkles: 8. Project structure
 ```
-├── datasets          
-|   └── data_loader      
+├── charclf          
+|   ├── tools      
+|   |   ├── eval.py      
+|   |   ├── fine_tune.py      
+|   |   ├── train.py   
+|   |   ├── viz.py      
+|   |   └── __init__.py
+|   ├── dataset.py
+|   ├── models.py
+|   └── __init__.py
+├── data
+|   ├── dataset_description.txt
+|   ├── emnist_test.pkl
+|   └── emnist_train.pkl  
 ├── model_hub      
-│   ├── pre_trained/      
-│   │   ├── alexnet.pth      
-│   │   ├── ... # Some other pre-trained model parameters      
-│   │
-│   └── fine_tuned/      
-│       ├── alexnet_tuned.pth      
-│       └── ... # Some other fine-tuned model parameters      
-│
-├── models      
-│   └── models.py      
-│
+|   ├── pre_trained/      
+|   │    └── {model_name}.pth
+|   └── fine_tuned/      
+|        └── {model_name}_tuned.pth     
 ├── outputs/      
-│   └── # Some visualizations      
-│
-└── tools      
-    ├── train.py      
-    ├── eval.py      
-    ├── fine_tune.py      
-    └── predict.py
+│   └── *.png
+├── LICENSE
+├── notebook.ipynb
+├── README.md
+└── requirements.txt
 ```

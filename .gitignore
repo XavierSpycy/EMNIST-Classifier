@@ -5,3 +5,5 @@ charclf/tools/__pycache__/*
 notebook-1.ipynb
 notebook-2.ipynb
 v2.ipynb
+*.pth
+*.pkl

@@ -1,4 +1,6 @@
 # EMNIST ByClass Handwritten Character Recognition
+> [!NOTE]
+> To circumvent the GitHub Git LFS limit, both the data and model weights have been relocated to [Google Drive](https://drive.google.com/drive/folders/1IQg_gIjjuC3aLp1PgXtOhpSmsMtUG6s5?usp=sharing). To replicate our repository, please download these files and place them in the appropriate directories.
 
 <p align="center">
   <img src="https://miro.medium.com/v2/resize:fit:2340/1*Fw-ehcNBR9byHtho-Rxbtw.gif">
